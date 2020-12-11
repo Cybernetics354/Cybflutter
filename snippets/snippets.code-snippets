@@ -1,1 +1,46 @@
-{}
+{
+	"Cyblock": {
+		"prefix": "cyblo",
+		"scope": "dart",
+        "body": [
+            "class ${1:Name}Cyblock extends Cyblock<${2:EventType}Event, ${3:ValueType}> {",
+            "  ${1:Name}Cyblock() : super(${4:InitialValue});\n",
+            "  @override",
+            "  void mapEventToState(${2:EventType}Event event) {",
+            "    ${0}",
+            "  }",
+            "}"
+        ],
+        "description": "Create a Cyblock"
+	},
+	"Singleton Cyblock": {
+		"prefix": "sgcyblo",
+		"scope": "dart",
+        "body": [
+			"class ${1:Name}Cyblock extends Cyblock<${2:EventType}Event, ${3:ValueType}> {",
+			"  static final ${1:Name}Cyblock _singleton = ${1:Name}Cyblock._();\n",
+			"  static ${1:Name}Cyblock get instance => _singleton;\n",
+			"  ${1:Name}Cyblock._() : super(${4:InitialValue});\n\n",
+            "  @override",
+            "  void mapEventToState(${2:EventType}Event event) {",
+			"    // TODO :: MapEventToState",
+			"    ${0}",
+            "  }",
+            "}"
+        ],
+        "description": "Create a Singleton Cyblock"
+	},
+	"Singleton Class": {
+        "prefix": "sgcls",
+		"scope": "dart",
+        "body": [
+			"class ${1:SomeClass} {",
+			"  static final ${1:SomeClass} _singleton = ${1:SomeClass}._();\n",
+			"  static ${1:SomeClass} get instance => _singleton;\n",
+			"  ${1:SomeClass}._();\n",
+			"  ${0}",
+            "}"
+        ],
+        "description": "Create a Singleton Class"
+    },
+}
