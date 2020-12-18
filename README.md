@@ -1,6 +1,6 @@
 # Cybflutter README
 
-This is the README for your extension "Cybflutter". After writing up a brief description, we recommend including the following sections.
+VSCode Snippets for my packages
 
 ## Features
 

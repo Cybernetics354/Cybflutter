@@ -43,4 +43,16 @@
         ],
         "description": "Create a Singleton Class"
     },
+    "Base Stream": {
+        "prefix": "basestream",
+        "scope": "dart",
+        "body": [
+            "/// Stream Controller for [${2:name}]",
+            "final StreamController<${1:Type}> ${2:name}Controller = new StreamController<${1:Type}>.broadcast();",
+            "/// Stream pipe for [${2:name}Controller]",
+            "Stream<${1:Type}> get ${2:name}Stream => ${2:name}Controller.stream;",
+            "/// Stream sink for [${2:name}Controller]",
+            "StreamSink<${1:Type}> get ${2:name}In => ${2:name}Controller.sink;"
+        ]
+    }
 }
