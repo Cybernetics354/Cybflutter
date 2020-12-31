@@ -3,7 +3,7 @@
     "publisher": "hanifmifta",
     "displayName": "Cybflutter",
     "description": "Extension to use flutter packages from cybernetics",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "engines": {
         "vscode": "^1.52.0"
     },
